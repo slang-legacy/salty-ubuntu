@@ -8,6 +8,7 @@ misc-pkgs:
       - clipit
       - banshee
       - gimp
+      - build-essential
 
 unneeded-packages:
   pkg.purged:
@@ -29,7 +30,7 @@ java:
   pkgrepo.managed:
     - ppa: webupd8team/java
 
-base:
+st2:
   pkgrepo.managed:
     - ppa: webupd8team/sublime-text-2
   pkg.installed:

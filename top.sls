@@ -9,3 +9,4 @@ base:
     - ssh
     - misc
     - privacy
+    - nodejs

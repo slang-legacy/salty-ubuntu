@@ -18,6 +18,7 @@
   'web',
   '.smartgit',
   '.ssh',
+  '.fonts',
   '.config/sublime-text-2'
 ] + folders_map.values() %}
 
