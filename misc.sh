@@ -19,3 +19,6 @@ apt-get remove --purge -y landscape-*
 apt-get remove --purge -y shotwell-*
 
 gsettings set org.gnome.desktop.interface monospace-font-name 'Inconsolata-dz for Powerline Medium 10'
+
+#disable capslock
+setxkbmap -option caps:none
