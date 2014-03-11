@@ -14,6 +14,19 @@ slang:
       - sudo
       - www-data
 
+git_email:
+  git.config_set:
+    - setting_name: user.email
+    - setting_value: slang800@gmail.com
+    - is_global: True
+
+git_name:
+  git.config_set:
+    - setting_name: user.name
+    - setting_value: Sean Lang
+    - is_global: True
+
+
 /home/slang/.bashrc:
   file.managed:
     - source: salt://users/.bashrc
