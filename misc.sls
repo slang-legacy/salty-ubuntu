@@ -9,6 +9,9 @@ misc-pkgs:
       - banshee
       - gimp
       - build-essential
+      - python-pip
+      - gm-notify
+      - tree
 
 unneeded-packages:
   pkg.purged:
@@ -30,15 +33,38 @@ java:
   pkgrepo.managed:
     - ppa: webupd8team/java
 
-st2:
+st3:
   pkgrepo.managed:
-    - ppa: webupd8team/sublime-text-2
+    - ppa: webupd8team/sublime-text-3
   pkg.installed:
-    - name: sublime-text
+    - name: sublime-text-installer
+
+smartgit:
+  pkgrepo.managed:
+    - ppa: eugenesan/ppa
+  pkg.installed:
+    - name: smartgithg
+
+truecrypt:
+  pkgrepo.managed:
+    - ppa: stefansundin/truecrypt
+  pkg.installed:
+    - name: truecrypt
 
 #more unneeded packages that are easier to remove with a regex
 'salt://misc.sh':
   cmd.script:
+    - cwd: /
     - template: jinja
     - context:
       username: {{ username }}
+
+# move /tmp to ram
+/tmp:
+  mount.mounted:
+    - device: tmpfs
+    - fstype: tmpfs
+    - opts:
+      - defaults
+      - noexec
+      - nosuid
