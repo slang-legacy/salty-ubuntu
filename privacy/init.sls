@@ -3,3 +3,4 @@
 'salt://privacy/privacy.sh':
   cmd:
     - script
+    - cwd: /
