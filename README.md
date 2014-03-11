@@ -19,8 +19,6 @@ sudo apt-get update
 sudo apt-get install salt-minion git
 sudo mkdir /srv
 sudo ln -s /usrdata/salty-ubuntu /srv/salt
-cd /srv/salt
-git clone https://github.com/slang800/salty-wordpress.git ./
 sudo salt-call --local state.highstate -l debug
 ```
 
@@ -41,3 +39,5 @@ Sadly, there are a few things that I haven't built into the config...
  - switch to single window mode in GIMP
  - configure stuff, setup last.fm scrobbling, and import media; in banshee
  - git configuration: `git config --global user.name "Sean Lang"` and `git config --global user.email "slang800@gmail.com"`
+ - add `setxkbmap -option caps:none` to startup
+ - configure `gm-notify`
