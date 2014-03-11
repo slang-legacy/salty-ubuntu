@@ -1,6 +1,3 @@
-slang:
-  group.present
-
 # ensure root account is locked
 root:
   user.present:
@@ -9,6 +6,7 @@ root:
 # the default password is core2062
 slang:
   user.present:
+    - fullname: Sean Lang
     - home: /home/slang
     - shell: /bin/bash
     - password: $6$nAyU0elf$6.KccOIgvX/UFF9kuXZ3gmV/jkrCt8mKuBMoE6.2Q/6gjv9rjgVLHnskAZHv0blZgNy8HErlqpUuZ0Iz4vN0I1
