@@ -19,7 +19,7 @@
   '.smartgit',
   '.ssh',
   '.fonts',
-  '.config/sublime-text-2'
+  '.config/sublime-text-3'
 ] + folders_map.values() %}
 
 {% for folder in folders %}
