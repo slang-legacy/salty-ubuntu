@@ -26,7 +26,6 @@ git_name:
     - setting_value: Sean Lang
     - is_global: True
 
-
 /home/slang/.bashrc:
   file.managed:
     - source: salt://users/.bashrc
