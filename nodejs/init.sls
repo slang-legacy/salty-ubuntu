@@ -14,8 +14,10 @@ npm-packages:
     - user: root
     - names:
       - coffee-script
+      - coffeelint
       - jade
       - stylus
       - roots
+      - jshint
     - require:
       - pkg: npm
