@@ -12,6 +12,8 @@ misc-pkgs:
       - python-pip
       - gm-notify
       - tree
+      - traceroute
+      - whois
 
 unneeded-packages:
   pkg.purged:
