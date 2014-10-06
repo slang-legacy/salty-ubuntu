@@ -1,6 +1,4 @@
-salty-wordpress
-=================
-
+# salty-wordpress
 Salt State configuration files for turning a fresh Ubuntu installation into a usable development environment.
 
 Before using this, you should configure it by editing `top.sls` and a lot of the other files. This configuration is made to fit my preferences, and is probably very different from yours.
@@ -24,8 +22,7 @@ sudo salt-call --local state.highstate -l debug
 
 then just wait for it to run... it takes awhile
 
-# Stuff this doesn't do
-
+## Stuff this doesn't do
 Sadly, there are a few things that I haven't built into the config...
 
  - change the date/time indicator to show seconds, the weekday, month, and date.
