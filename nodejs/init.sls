@@ -4,11 +4,6 @@ nodejs:
   pkg.installed:
     - name: nodejs
 
-npm:
-  pkg.installed:
-    - require:
-      - pkg: nodejs
-
 npm-packages:
   npm.installed:
     - user: root
@@ -20,4 +15,4 @@ npm-packages:
       - roots
       - jshint
     - require:
-      - pkg: npm
+      - pkg: nodejs
