@@ -15,15 +15,17 @@ slang:
       - www-data
 
 git_email:
-  git.config_set:
-    - setting_name: user.email
-    - setting_value: slang800@gmail.com
+  git.config:
+    - name: user.email
+    - value: slang800@gmail.com
+    - user: slang
     - is_global: True
 
 git_name:
-  git.config_set:
-    - setting_name: user.name
-    - setting_value: Sean Lang
+  git.config:
+    - name: user.name
+    - value: Sean Lang
+    - user: slang
     - is_global: True
 
 /home/slang/.bashrc:

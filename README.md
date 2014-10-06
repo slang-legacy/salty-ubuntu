@@ -35,6 +35,5 @@ Sadly, there are a few things that I haven't built into the config...
  - install the chrome Hangouts plugin
  - switch to single window mode in GIMP
  - configure stuff, setup last.fm scrobbling, and import media; in banshee
- - git configuration: `git config --global user.name "Sean Lang"` and `git config --global user.email "slang800@gmail.com"`
  - add `setxkbmap -option caps:none` to startup
  - configure `gm-notify`
