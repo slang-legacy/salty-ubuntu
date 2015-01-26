@@ -14,6 +14,7 @@ misc-pkgs:
       - tree
       - traceroute
       - whois
+      - tidy
 
 unneeded-packages:
   pkg.purged:
